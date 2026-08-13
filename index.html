@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hjælp Danske Forskere i Udlandet</title>
+  <title>Danske Forskere i Udlandet</title>
 
   <style>
     /* =========================================================
@@ -158,16 +158,20 @@
     }
 
     .name-column {
-      width: 24%;
+      width: 20%;
       font-weight: bold;
     }
 
     .institution-column {
-      width: 28%;
+      width: 20%;
+    }
+
+    .research-column {
+      width: 30%;
     }
 
     .comment-column {
-      width: 48%;
+      width: 30%;
     }
 
     footer {
@@ -212,12 +216,14 @@
         color: var(--accent-colour);
       }
 
-      td:nth-child(1)::before { content: "Name"; }
+      td:nth-child(1)::before { content: "Navn"; }
       td:nth-child(2)::before { content: "Institution"; }
-      td:nth-child(3)::before { content: "Comment"; }
+      td:nth-child(3)::before { content: "Forskning"; }
+      td:nth-child(4)::before { content: "Kommentar"; }
 
       .name-column,
       .institution-column,
+      .research-column
       .comment-column {
         width: 100%;
       }
@@ -229,13 +235,14 @@
   <div class="page">
     <header>
       <h1>Hjælp Danske Forskere i Udlandet</h1>
+      <!-- Indsæt undertitel herunder -->
       <p class="intro">
-        Undertitel
+        
       </p>
 
       <div class="button-row">
         <!-- Replace the # below with your Google Form link -->
-        <a class="button" href="#">Skriv under</a>
+        <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSf_gKUNrITz6n-glRE7oZKe6rWm3Cb5nWXh1lKzMfW49qTuyQ/viewform?usp=publish-editor">Skriv under</a>
         <a class="button secondary" href="#signatories">Se underskrifter</a>
       </div>
     </header>
@@ -299,9 +306,10 @@
       <table id="signatoriesTable">
         <thead>
           <tr>
-            <th class="name-column">Navn</th>
-            <th class="institution-column">Institution</th>
-            <th class="comment-column">Kommentar</th>
+            <td class="name-column">Navn (stilling)</td>
+            <td class="institution-column">Ph.d. institution, fagområde</td>
+            <td class="research-column">Forskningsfelt</td>
+            <td class="comment-column">Erfaringer og kommentarer</td>
           </tr>
         </thead>
         <tbody>
@@ -310,27 +318,31 @@
                Copy/paste rows from your Google Form export.
                Format:
                <tr>
-                 <td class="name-column">Name</td>
-                 <td class="institution-column">Institution</td>
-                 <td class="comment-column">Comment</td>
+                 <td class="name-column">Navn (stilling)</td>
+                 <td class="institution-column">Ph.d. institution, fagområde</td>
+                 <td class="research-column">Forskningsfelt</td>
+                 <td class="comment-column">Erfaringer og kommentarer</td>
                </tr>
                ===================================================== -->
 
           <tr>
             <td class="name-column">Dr Example Name</td>
             <td class="institution-column">Example University</td>
+            <td class="research-column">Example research</td>
             <td class="comment-column">Optional comment from the signatory.</td>
           </tr>
 
           <tr>
             <td class="name-column">Prof Another Example</td>
             <td class="institution-column">Another Institution</td>
+            <td class="research-column">Another research</td>
             <td class="comment-column">Another optional comment.</td>
           </tr>
 
           <tr>
             <td class="name-column">Dr Third Example</td>
             <td class="institution-column">Department of Physics, Example College</td>
+            <td class="research-column">Some research</td>
             <td class="comment-column"></td>
           </tr>
         </tbody>
@@ -338,7 +350,7 @@
     </section>
 
     <footer>
-      Sidst opdateret: <!-- EDIT THIS DATE --> 18 Juli 2026
+      Sidst opdateret: <!-- EDIT THIS DATE --> 13 August 2026
     </footer>
   </div>
 
